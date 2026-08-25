@@ -348,7 +348,7 @@ export function HeroSection() {
             <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-[5px] border-primary/25 shadow-[0_0_60px_rgba(255,118,87,.18)]">
 
               <img
-                src="/NatalyEllen/images/me.jpg"
+                src="/images/me.jpg"
                 alt="Nataly Ellen"
                 className="object-cover transition-transform duration-700 hover:scale-105"
               />
