@@ -10,8 +10,8 @@ import {
   Code2,
   Sparkles,
 } from "lucide-react";
-import profilePic from '@/public/images/me.jpg';
 
+const basePath = process.env.NODE_ENV === "production" ? "/NatalyEllen" : "";
 const services = [
   "Website Development",
   "Landing Pages",
@@ -348,7 +348,7 @@ export function HeroSection() {
             <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-[5px] border-primary/25 shadow-[0_0_60px_rgba(255,118,87,.18)]">
 
               <Image
-                src={profilePic}
+                src={`${basePath}/images/me.jpg`}
                 alt="Nataly Ellen"
                 fill
                 priority
