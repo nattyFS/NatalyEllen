@@ -11,7 +11,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-const basePath = process.env.NODE_ENV === "production" ? "/NatalyEllen" : "";
+const basePath = process.env.NODE_ENV === "production" ? "/NatalyEllen/public" : "";
 const services = [
   "Website Development",
   "Landing Pages",
