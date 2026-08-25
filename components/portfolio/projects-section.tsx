@@ -3,12 +3,15 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight, ExternalLink, Github } from "lucide-react";
+import project1Img from "@/public/images/project-1.jpg";
+import modelImg from "@/public/images/model.png";
+import { StaticImageData } from "next/image";
 
 interface Project {
   id: number;
   title: string;
   description: string;
-  image: string;
+  image: string | StaticImageData;
   tags: string[];
   //liveUrl: string;
   githubUrl: string;
@@ -19,7 +22,7 @@ const projects: Project[] = [
     id: 1,
     title: "E-Commerce Dashboard",
     description: "A comprehensive analytics dashboard for e-commerce businesses with real-time data visualization.",
-    image: "/images/project-1.jpg",
+    image: project1Img,
     tags: ["Next.js", "TypeScript", "Tailwind"],
     githubUrl: "https://github.com/nattyFS/EcommerceDashboard",
   },
@@ -27,7 +30,7 @@ const projects: Project[] = [
     id: 3,
     title: "example Landing Page for store",
     description: "Intelligent and modern landing page for an e-commerce store with responsive design and smooth user experience.",
-    image: "/images/model.png",
+    image: modelImg,
     tags: ["React", "TypeScript", "Tailwind"],
     githubUrl: "https://github.com/nattyFS/LandingPage",
   }
